@@ -7,6 +7,8 @@
 }
 
 .loginheader {
+  position: relative;
+  margin-top: 50px;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -15,24 +17,39 @@
 }
 
 .loginheader img {
+
+  
   width: 250px;
-  filter:drop-shadow(0px 10px 5px);
+  filter:drop-shadow(10px -13px 4px rgba(0, 0, 0, 0.5));
   position:absolute;
   margin-top: -350px;
 }
 
 .loginheader h1 {
-  color: black;
-  font-size: 30px;
+  color: #162741;
+  font-size: 35px;
   line-height:2;
+  position: relative;
+  margin-top: 16px;
+  text-shadow:  
+  1px -1px 0 #dcdcdc, 
+  2px -2px 0 #dcdcdc,
+  3px -3px 0 #dcdcdc;
   
 }
 
 .loginheader h2 {
-
-  color:#000;
-  font-size: 15px;
+  
+  position: relative;
+  margin-top: 10px;
+  color:#162741;
+  font-size: 20px;
   text-align: center;
+  text-shadow:  
+  1px -1px 0 #dcdcdc, 
+  2px -2px 0 #dcdcdc,
+  3px -3px 0 #dcdcdc;
+  
 }
 .logininput {
   border: 2px #000 solid;
@@ -48,7 +65,7 @@
 }
 
 .loginbutton {
-  background-color: #ee665c;
+  background-color: #162741;
   border-radius: 8px;
   cursor: pointer;
   font-size: 18px;

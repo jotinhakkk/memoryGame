@@ -1,0 +1,79 @@
+
+.select-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+  justify-content: center;
+}
+
+
+.select-header {
+  position: relative;
+  margin-top: 400px;
+  margin-bottom: 80px;
+
+}
+
+.select-form img {
+  width: 250px;
+  filter:drop-shadow(10px -13px 4px rgba(0, 0, 0, 0.5));;
+  position:absolute;
+  margin-top: -300px;
+}
+
+.select-header h1 {
+  font-size: 40px;
+  color: #dcdcdc;
+  text-shadow:  
+  1px -1px 0 #000, 
+  2px -2px 0 #000, 
+  3px -3px 0 #000, 
+  4px -4px 0 #000, 
+  5px -5px 0 #000,
+  
+  13px -13px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+.buttons {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.buttons button {
+  padding: 20px 20px;
+  margin: 10px;
+  font-size: 18px;
+  background-color: #0000ca;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  filter:drop-shadow(10px -8px 5px black);
+}
+
+.buttons button:hover {
+  position: relative;
+			top: 1px;
+			left: 1px;
+			border-color: #000 #999 #999 #000; 
+
+			background: #191970;
+}
+
+
+.buttons button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.buttons back{
+
+  
+  background-color: #6495ED;
+  
+
+}
