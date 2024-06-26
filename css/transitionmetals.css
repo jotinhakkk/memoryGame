@@ -1,3 +1,7 @@
+body{
+  overflow: hidden;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -9,19 +13,24 @@ main {
   align-items: center;
   justify-content: center;
   padding: 20px 20px 50px;
+  margin-top: 0;
 }
 
 header {
+  position: fixed; /* Fixa o header no topo da página */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.2em;
   width: 100%;
-  max-width: 800px;
-  padding: 30px;
-  margin: 0 0 30px;
+  max-width: 900px;
+  padding: 20px;
   border-radius: 5px;
+  z-index: 1000; /* Ajuste o z-index conforme necessário */
 }
 
 .grid {
@@ -29,7 +38,8 @@ header {
   grid-template-columns: repeat(8, 1fr);
   gap: 25px;
   width: 100%;
-  margin: 0 auto;
+  margin: 60px auto 0; /* Ajusta a margem para compensar o espaço ocupado pelo header */
+  
 }
 
 .card {
@@ -40,7 +50,6 @@ header {
   transition: all 300ms ease;
   transform-style: preserve-3d;
   background-color: #ccc;
-
 }
 
 .face {
@@ -49,7 +58,7 @@ header {
   position: absolute;
   background-size: cover;
   background-position: center;
-  border:none;
+  border: none;
   border-radius: 10px;
   transition: all 300ms ease;
 }
@@ -72,28 +81,23 @@ header {
   opacity: 0.5;
 }
 
-@media screen and (max-width:920px) {
+@media screen and (max-width: 920px) {
   .grid {
     grid-template-columns: repeat(5, 1fr);
-
   }
 }
-.backbt{
 
+.backbt {
   position: fixed;
-  top: 20px; 
+  top: 0px; 
   left: 10px;
-  padding: 20px 20px;
+  padding: 17px;
   margin: 10px;
   font-size: 18px;
-  background-color: #dcdcdc;
+  background-color:  rgba(255, 255, 255, 0.8);
   color: #000;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  filter:drop-shadow(5px -4px 2px black);
   
-  
-  
-  
-  }
+}

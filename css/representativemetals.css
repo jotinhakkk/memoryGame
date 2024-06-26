@@ -1,3 +1,6 @@
+body{
+  overflow: hidden;
+}
 main {
   display: flex;
   flex-direction: column;
@@ -12,6 +15,10 @@ main {
 }
 
 header {
+  position: absolute; 
+  top: 700px;
+  left: 75%; 
+  transform: translateX(-50%); 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,13 +27,13 @@ header {
   width: 100%;
   max-width: 800px;
   padding: 30px;
-  margin: 0 0 30px;
+  margin: 0; 
   border-radius: 5px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   gap: 25px;
   width: 100%;
   margin: 0 auto;
@@ -80,9 +87,9 @@ header {
 }
 .backbt{
 
-  position: fixed;
-  top: 20px; 
-  left: 10px;
+  position: relative;
+  bottom: 100px;
+  left: 500px;
   padding: 20px 20px;
   margin: 10px;
   font-size: 18px;
@@ -91,8 +98,7 @@ header {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  filter:drop-shadow(10px -8px 5px black);
-  
+  filter: drop-shadow(10px -8px 5px black);
   
   
   }
